@@ -1,5 +1,5 @@
-BEL Export of Hetionet
-======================
+BEL Export of OpenBioLink
+=========================
 This repository contains exports of `OpenBioLink <https://github.com/openbiolink/openbiolink>`_
 as `Biological Expression Language (BEL) <http://cthoyt.gitbook.io/bel>`_. The research article describing
 OpenBioLink is:
@@ -12,8 +12,8 @@ BEL is a domain specific language that enables the expression of biological rela
 in a machine-readable format. It is supported by the `PyBEL <https://github.com/pybel/pybel>`_
 software ecosystem.
 
-Download Hetionet as BEL
-------------------------
+Download OpenBioLink as BEL
+---------------------------
 The network is available in three BEL formats:
 
 - **BEL Script** - see description `below <https://github.com/pybel/openbiolink-bel#bel-script>`_
@@ -46,7 +46,7 @@ Example opening BEL Script using `pybel.from_bel_script() <https://pybel.readthe
 
     import gzip
     from pybel import from_bel_script
-    with gzip.open('hetionet-v1.0.bel.gz') as file:
+    with gzip.open('openbiolink.bel.gz') as file:
         graph = from_bel_script(file)
 
 Nodelink JSON
@@ -62,4 +62,4 @@ Example opening Nodelink JSON using `pybel.from_nodelink_gz()
 .. code-block:: python
 
     from pybel import from_nodelink_gz
-    graph = from_nodelink_gz('hetionet-v1.0.bel.nodelink.json.gz')
+    graph = from_nodelink_gz('openbiolink.bel.nodelink.json.gz')
