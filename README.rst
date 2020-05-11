@@ -45,7 +45,7 @@ Example opening BEL Script using `pybel.from_bel_script() <https://pybel.readthe
 .. code-block:: python
 
     from pybel import from_bel_script_gz
-    graph = from_bel_script_gz(file)
+    graph = from_bel_script_gz('openbiolink.bel.gz')
 
 Nodelink JSON
 ~~~~~~~~~~~~~
