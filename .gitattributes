@@ -1,2 +1,0 @@
-bel/openbiolink.bel.gz filter=lfs diff=lfs merge=lfs -text
-bel/openbiolink.bel.nodelink.json.gz filter=lfs diff=lfs merge=lfs -text
